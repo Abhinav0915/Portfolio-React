@@ -1,5 +1,22 @@
+import Navbar from '../Utils/NavBar'; 
+import Background from '../../assets/background.webp'; 
+
+
 export default function Contact(){
     return(
-        <h1>This is the Contact Page</h1>
+        <div style={{ 
+            backgroundImage: `url(${Background})`, // Apply the background image
+            backgroundSize: 'cover', // Adjust the background size as needed
+            backgroundPosition: 'center', // Adjust the background position as needed
+            minHeight: '100vh', // Set a minimum height to cover the entire viewport
+          }}>
+            <Navbar />
+         
+      
+            
+      
+          
+      
+          </div>
     )
 }
