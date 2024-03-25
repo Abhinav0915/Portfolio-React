@@ -10,7 +10,10 @@ export default function IntroText() {
         boxSizing: 'border-box', // Include padding in the width calculation
         textAlign: 'left', // Align text to the left
       }}>
-        <h1 style={{ fontSize: '40px', marginBottom: '10px' }}>Hi, I am <strong className="main-name"  style={{color: '#06d6a0'}}> Abhinav</strong></h1>
+        <h1 style={{ fontSize: '40px', marginBottom: '10px' }}>Hi, I am <strong className="main-name"  style={{color: '#06d6a0'}}> Abhinav{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span></strong></h1>
         <p style={{ fontSize: '40px' }}>
          <Type/>
         </p>

@@ -3,15 +3,10 @@ import avatarImage from '../../assets/avatar.svg'; // Import the image file
 
 export default function Avatar() {
   return (
-    <img className='mt-4' 
-      src={avatarImage} 
-      alt="Avatar" 
-      style={{
-        width: '35vw', // Set width to cover 25% of the viewport width
-        height: '80vh', // Set height to cover 60% of the viewport height
-        
-      
-      }}
-    /> 
+    <img 
+    className='mt-1 w-2/5 h-1/5' // Tailwind CSS classes for width and height
+    src={avatarImage} 
+    alt="Avatar" 
+  /> 
   );
 }
