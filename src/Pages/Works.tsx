@@ -1,8 +1,11 @@
-import Navbar from '../Utils/NavBar'; 
-import Background from '../../assets/background.webp'; 
+import Background from '../assets/background.webp'; 
+
+import WorkHeading from '../components/Headings/WorkHeading';
+import Navbar from '../components/Utils/NavBar';
+import WorkCards from '../components/Utils/WorkCards';
 
 
-export default function Contact(){
+export default function Works(){
     return(
         <div style={{ 
             backgroundImage: `url(${Background})`, // Apply the background image
@@ -10,13 +13,9 @@ export default function Contact(){
             backgroundPosition: 'center', // Adjust the background position as needed
             minHeight: '100vh', // Set a minimum height to cover the entire viewport
           }}>
-            <Navbar />
-         
-      
-            
-      
-          
-      
+            <Navbar/>
+            <WorkHeading/>
+            <WorkCards/>
           </div>
     )
 }

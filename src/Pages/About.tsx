@@ -1,5 +1,6 @@
-import Navbar from '../Utils/NavBar'; 
-import Background from '../../assets/background.webp'; 
+import Navbar from '../components/Utils/NavBar'; 
+import Background from '../assets/background.webp'; 
+
 
 export default function About(){
     return(

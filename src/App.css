@@ -1,41 +1,4 @@
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .line {
-    position: absolute;
-    width: 2px;
-    height: calc(100% - 20px); /* Adjust height as needed */
-    background: #ccc; /* Line color */
-    left: 50%;
-    transform: translateX(-50%);
-    top: 10px;
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin: 20px 0;
-  }
-  
-  .timeline-item-content {
-    position: relative;
-    max-width: 600px;
-    padding: 20px;
-    background: #fff; /* Background color for timeline items */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px;
-  }
-  
-  .circle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #ccc; /* Circle color */
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-  }
-  
+
+.tech-containers {
+  background-color: red; 
+ }

@@ -1,5 +1,5 @@
 
-import avatarImage from '../../assets/avatar.png'; // Import the image file
+import avatarImage from '../../assets/avatar.svg'; // Import the image file
 
 export default function Avatar() {
   return (

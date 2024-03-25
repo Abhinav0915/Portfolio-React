@@ -1,10 +1,10 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Homepage from './components/Pages/Homepage'
-import Works from './components/Pages/Works'
-import Experience from './components/Pages/Experience'
-import About from './components/Pages/About'
-import Contact from './components/Pages/Contact'
+import Homepage from './Pages/Homepage'
+import Works from './Pages/Works'
+import Experience from './Pages/Experience'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
 function App() {
  
   return (
