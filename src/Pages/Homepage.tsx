@@ -11,7 +11,8 @@ import { useState } from 'react';
 
 
 
-export default function Homepage() {
+
+export default function Homepage () {
   const [recipient, setRecipient] = useState('');
   const [subject, setSubject] = useState('');
   const [msgBody, setMsgBody] = useState('');
@@ -65,7 +66,7 @@ export default function Homepage() {
   
   return (
     <>
-
+    
     <div style={{ 
       backgroundImage: `url(${Background})`, // Apply the background image
       backgroundSize: 'cover', // Adjust the background size as needed
@@ -97,7 +98,7 @@ export default function Homepage() {
   {/* Left side: Text heading */}
   <div className="w-1/2 p-6" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white'}}>
     <h2 className="text-4xl font-bold mb-4">Get in Touch</h2> 
-    <h2 className="text-4xl font-bold mb-4"><span style={{color: '#06d6a0'}}>Contact Me</span> </h2>
+    <h2 className="text-4xl font-bold mb-4" style={{display: 'flex', justifyContent: 'left'}}><span style={{color: '#06d6a0'}}>Contact Me</span> </h2>
 
   </div>
 
@@ -121,7 +122,7 @@ export default function Homepage() {
 
     
     </div>
-
+  
     </>
    
   );
