@@ -28,8 +28,7 @@ export default function Experience(){
             <Navbar />
          
             {/* <Timeline experiences={experiences}/> */}
-            <hr />
-
+          
          
       
           

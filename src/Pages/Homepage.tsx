@@ -1,10 +1,12 @@
 import Navbar from '../components/Utils/NavBar'; 
 import Background from '../assets/background.webp'; 
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import Avatar from '../components/Home/Avatar';
 import IntroText from '../components/Home/IntroText';
 import TechStack from '../components/Home/Skills';
-import axios from 'axios';
+// import axios from 'axios';
 import { useState } from 'react';
 
 
@@ -15,26 +17,51 @@ export default function Homepage() {
   const [msgBody, setMsgBody] = useState('');
 
   // Function to handle form submission
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  // const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  //   e.preventDefault();
+  //   try {
+  //     // Send a POST request to your backend API
+  //     const response = await axios.post('http://localhost:8080/sendMail', {
+  //       recipient,
+  //       subject,
+  //       msgBody,
+  //     });
+  //     console.log(response.data); // Log the response from the backend
+  //     // Clear form fields after successful submission
+  //     setRecipient('');
+  //     setSubject('');
+  //     setMsgBody('');
+  //     alert('Email sent successfully!'); // Display success message
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //     alert('Error sending email. Please try again.'); // Display error message
+  //   }
+  // };
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    try {
-      // Send a POST request to your backend API
-      const response = await axios.post('http://localhost:8080/sendMail', {
-        recipient,
-        subject,
-        msgBody,
-      });
-      console.log(response.data); // Log the response from the backend
-      // Clear form fields after successful submission
-      setRecipient('');
-      setSubject('');
-      setMsgBody('');
-      alert('Email sent successfully!'); // Display success message
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email. Please try again.'); // Display error message
+  
+    if (form.current) {
+      emailjs
+        .sendForm('service_ito9vkl', 'template_ckfn6en', form.current, {
+          publicKey: 'HSLJuqCGfgAtZltxK',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            alert("Message Sent!")
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    } else {
+      console.error("Form reference is null.");
     }
   };
+  
   
   return (
     <>
@@ -76,7 +103,7 @@ export default function Homepage() {
 
     {/* Right side: Form */}
     <div className="w-1/2 p-6">
-      <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
+      <form className="max-w-sm mx-auto" onSubmit={sendEmail} ref={form}>
         <div className="mb-5">
         <div className="mb-5">
           <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
