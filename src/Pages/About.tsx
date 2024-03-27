@@ -1,5 +1,5 @@
-
 import Background from '../assets/background.webp'; 
+import Contact from '../components/About/Contact';
 import NavBar from '../components/Utils/NavBar';
 import ResumeDownload from '../components/Utils/ResumeDownload';
 
@@ -33,6 +33,7 @@ export default function About(){
               </div> */}
           </div>
       </div>
+      <Contact/>
   </div>
     )
 }
