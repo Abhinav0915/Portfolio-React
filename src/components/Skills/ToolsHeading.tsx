@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
-function SkillsHeading(){
+function ToolsHeading(){
+   
       
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -10,14 +11,17 @@ function SkillsHeading(){
             transition: { delay: 1, duration: 1 } 
         }
     };
+
     return(
         <motion.div
             initial="hidden"
             animate="visible"
             variants={itemVariants}
             >
-        <h1 className="text-6xl text-center text-white mt-8" style={{fontFamily: '"Poppins", sans-serif'}}>Professional <span style={{color: '#06d6a0'}}>Skills</span></h1>
+        <h1 className="text-6xl text-center text-white mt-8" style={{fontFamily: '"Poppins", sans-serif'}}>Passionated <span style={{color: '#06d6a0'}}>Tools</span></h1>
         </motion.div>
+          
     )
 }
-export default SkillsHeading;
+
+export default ToolsHeading;

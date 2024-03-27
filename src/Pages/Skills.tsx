@@ -1,10 +1,15 @@
 import Navbar from '../components/Utils/NavBar'; 
 import Background from '../assets/background.webp'; 
-import TechStack from '../components/Skills/TechStack';
+
 import SkillsProgess from '../components/Skills/SkillsProgress';
 import SkillsHeading from '../components/Skills/SkillsHeading';
+// import MoreTechStacks from '../components/Skills/MoreTechsHeading';
+import ToolsHeading from '../components/Skills/ToolsHeading';
+import ToolsMenu from '../components/Skills/ToolsMenu';
 
 export default function Skills(){
+
+
     return(
         <div style={{ 
             backgroundImage: `url(${Background})`, // Apply the background image
@@ -17,8 +22,9 @@ export default function Skills(){
             <SkillsHeading/>
             <SkillsProgess/>
             
-            <TechStack/>
-      
+            {/* <TechStack/> */}
+            <ToolsHeading/>
+            <ToolsMenu/>
           
       
           </div>

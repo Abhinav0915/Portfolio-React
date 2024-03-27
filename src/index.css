@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 
-/* .tech-containers:hover {
+.tech-containers:hover {
     box-shadow: 0 10px 20px white;
     transform: scale(1.1); 
     transition: transform 0.2s ease; 
-  } */
+  }
+  .circular-progessbar :hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+  }
 /* 
 .resume-download:hover{
   box-shadow: 0 10px 20px white;
@@ -19,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
   margin-top: 1em;
   /* Add more styling as needed */
 }
