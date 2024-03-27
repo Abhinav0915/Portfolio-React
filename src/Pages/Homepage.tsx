@@ -2,12 +2,14 @@ import Navbar from '../components/Utils/NavBar';
 import Background from '../assets/background.webp'; 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
-import Avatar from '../components/Home/Avatar';
-import IntroText from '../components/Home/IntroText';
+
 import TechStack from '../components/Home/Skills';
 // import axios from 'axios';
 import { useState } from 'react';
+import Type from '../components/Home/Type';
+import SocialApps from '../components/Home/SocialApps';
 
 
 
@@ -17,6 +19,25 @@ export default function Homepage () {
   const [subject, setSubject] = useState('');
   const [msgBody, setMsgBody] = useState('');
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { delay: 1, duration: 2 } 
+    }
+  };
+  
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 1, duration: 1 } 
+    }
+  };
+  
+
+  
   // Function to handle form submission
   // const handleSubmit = async (e: { preventDefault: () => void; }) => {
   //   e.preventDefault();
@@ -74,18 +95,52 @@ export default function Homepage () {
       minHeight: '100vh', // Set a minimum height to cover the entire viewport
     }}>
       <Navbar />
-   
+      
+      <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+         <motion.h1
+          variants={itemVariants}
+          style={{ display: 'flex', justifyContent: 'center', letterSpacing: 7, fontWeight: 'bolder', userSelect: 'none' }}
+          className='mt-10 text-6xl text-white'
+        >
+          <span className='text-green-500'>&lt;A</span>bhina<span className='text-green-500'>v/&gt;</span>
+        </motion.h1>
+        </motion.div>
 
-      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingLeft: '40px', paddingRight: '30px'}}>
-        <IntroText/>
-        <Avatar/>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          transition={{ delay: 1 }} // Delay appearance of Type by 1 second
+        >
+          <motion.p
+            variants={itemVariants}
+            className='text-white text-3xl text-center mt-14'
+          >
+            <Type/>
+          </motion.p>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          transition={{ delay: 2 }} // Delay appearance of SocialApps by 2 seconds
+        >
+          <div className='text-center text-white' style={{marginTop: '6em'}} >
+            <p className='text-3xl'>FIND ME ON</p>
+            <p className='mt-4' style={{fontSize: '12px'}}>Please don't hesitate to reach out to me and <span style={{color: '#06d6a0'}}>connect</span>.</p>
+            <SocialApps/>
+          </div>
+        </motion.div>
       </div>
 
-        
+      
 
-    
 
-    </div>
     <div style={{ 
       backgroundImage: `url(${Background})`, 
       backgroundSize: 'cover', 

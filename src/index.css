@@ -14,3 +14,26 @@
   transform: scale(1.1); 
   transition: transform 0.2s ease; 
 } */
+
+.social-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  /* Add more styling as needed */
+}
+
+.social-icon {
+  font-size: 4em; /* Adjust the size of the icons */
+  color: #06d6a0; /* Adjust the color of the icons */
+  border-radius: 50%; /* Make the icons circular */
+  padding: 8px; /* Add padding around the icons */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition effects */
+}
+
+.social-icon:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  box-shadow: 0 10px 20px #06d6a0;
+  transform: scale(1.1); /* Scale up the icon on hover */
+}
+

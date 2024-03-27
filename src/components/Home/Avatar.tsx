@@ -15,7 +15,7 @@ export default function Avatar() {
       }}
     >
     <img 
-    // className='mt-1 w-3/5 h-7/8' 
+    className='mt-1 w-3/5 h-7/8' 
     src={avatarImage} 
     alt="Avatar" 
   /> 

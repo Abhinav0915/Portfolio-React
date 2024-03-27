@@ -30,7 +30,7 @@ const TechStack = () => {
   return (
     <>
         <h1 className="text-6xl text-center text-white" style={{fontFamily: '"Poppins", sans-serif'}}>Professional <span style={{color: '#06d6a0'}}>Skills</span></h1>
-        <Marquee style={{padding: '45px'}} speed={100} direction="left">
+        <Marquee style={{padding: '45px'}} speed={70} direction="left">
         {icons.map(({ icon, name }, index) => (
           <div key={index} className="tech-containers relative bg-transparent w-40 h-40 border-2 rounded-lg p-4 flex items-center justify-center shadow-md ml-10 mr-4">
             <div className="text-center text-7xl" style={{color: 'white'}}>
@@ -41,7 +41,7 @@ const TechStack = () => {
         ))}<br></br>
         
       </Marquee>
-      <Marquee style={{padding: '45px'}} speed={100} direction="right" >
+      <Marquee style={{padding: '45px'}} speed={70} direction="right" >
         {tools.map(({ tool, name }, index) => (
           <div key={index} className="tech-containers relative bg-transparent w-40 h-40 border-2 rounded-lg p-4 flex items-center justify-center shadow-md ml-10 mr-4">
             <div className="text-center text-7xl" style={{color: 'white'}}>
@@ -52,6 +52,7 @@ const TechStack = () => {
         ))}
         
       </Marquee>
+  
     </>
     
   );
