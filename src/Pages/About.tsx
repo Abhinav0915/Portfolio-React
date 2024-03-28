@@ -1,13 +1,24 @@
 import Background from '../assets/background.webp'; 
-import Contact from '../components/About/Contact';
+import ContactModal from '../components/About/ContactModal';
+import PersonalInfo from '../components/About/AdaptiveStats';
 import NavBar from '../components/Utils/NavBar';
 import ResumeDownload from '../components/Utils/ResumeDownload';
+import EducationAndExperienceHeading from '../components/About/EduAndExpHeading';
+import Experience from '../components/About/Experiences';
+import Education from '../components/About/Education';
 
 
 export default function About(){
     return(
-      <div className="min-h-screen bg-cover bg-center text-white" style={{ backgroundImage: `url(${Background})` }}>
+        <>
+      <div className="text-white" style={{ 
+        backgroundImage: `url(${Background})`,
+        backgroundSize: 'cover', // Adjust the background size as needed
+        backgroundPosition: 'center', // Adjust the background position as needed
+        minHeight: '50vh', 
+         }}>
       <NavBar />
+
       <div className="flex justify-center items-center py-8 md:py-20 px-4 md:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between w-full max-w-screen-lg">
               <div className="md:mr-8 mb-8 md:mb-0">
@@ -18,8 +29,10 @@ export default function About(){
                   <p className="mt-4 text-xl">I am proficient in <span className="text-green-500">Frontend Development</span>, as well as have knowledge in programming languages such as Javascript, Java, Python, Dart, and C++.</p>
                   <p className="mt-4 text-xl">I have a passion for working with <span className="text-green-500">React, Springboot</span>, and Databases like <span className="text-green-500">MySQL and MongoDB</span></p>
                   <p className="mt-4 text-xl">I am also interested in building new <span className="text-green-500">Web Technologies and Products</span>, as well as exploring areas related to <span className="text-green-500">Artificial Intelligence.</span></p>
-                  <ResumeDownload/>
+                  
+                  <ResumeDownload/> 
               </div>
+              
               {/* <div className="mt-4 md:mt-0">
                   <Document file={AbhinavResume} onLoadSuccess={onDocumentLoadSuccess}>
                       <Page 
@@ -32,8 +45,50 @@ export default function About(){
                   </Document>
               </div> */}
           </div>
+          
       </div>
-      <Contact/>
-  </div>
+
+      <div className="flex justify-center">
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" style={{width: '50%'}} />
+        </div>
+
+      <div className="text-white" 
+      style={{ 
+        backgroundImage: `url(${Background})` ,
+        backgroundSize: 'cover', // Adjust the background size as needed
+        backgroundPosition: 'center', // Adjust the background position as needed
+        minHeight: '10vh', // Set a minimum height to cover the entire viewport
+        }}>
+            
+      <PersonalInfo/>
+      <div className="flex justify-center">
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" style={{width: '50%'}} />
+    </div>
+      
+      </div>
+      
+      <div className="text-white" 
+      style={{ 
+        backgroundImage: `url(${Background})` ,
+        backgroundSize: 'cover', // Adjust the background size as needed
+        backgroundPosition: 'center', // Adjust the background position as needed
+        minHeight: '100vh', // Set a minimum height to cover the entire viewport
+        }}>
+            
+        <EducationAndExperienceHeading/>
+        <div className='flex flex-row mt-10' style={{ paddingLeft: '15%', paddingRight:'15%', paddingBottom: '5em'}}>
+            <Experience/>
+            <Education/>
+        </div>
+        {/* <div className='flex flex-start'>
+            <ContactModal/>
+        </div> */}
+      
+      </div>
+      
+      
+     
+     </div>
+  </>
     )
 }

@@ -7,7 +7,7 @@ function SkillsProgress() {
         hidden: { opacity: 0 },
         visible: { 
             opacity: 1,
-            transition: { delay: 1, duration: 2 } 
+            transition: { delay: 1.2, duration: 1 } 
         }
     };
       
@@ -16,11 +16,9 @@ function SkillsProgress() {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { delay: 1, duration: 1 } 
+            transition: { delay: 1.2, duration: 1 } 
         }
     };
-
-    
 
     const progressData = [
         { label: 'HTML', percentage: 80 },
@@ -42,20 +40,16 @@ function SkillsProgress() {
             variants={containerVariants}
         >
             <div className="flex justify-center items-center mt-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4" style={{ height: '50%', width: '50%' }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4" style={{ height: '45%', width: '45%' }}>
                     {progressData.map((item, index) => (
                         <motion.div 
-                        
                             key={index}
                             variants={itemVariants}
-                            
+                            style={{ marginBottom: '20px', marginLeft: '10px', width: '80%', height: '80%' }} // Set fixed dimensions
                         >
-                            <div className="flex flex-col items-center p-10">
-                                <motion.div
-                                    
-                                >
+                            <div className="flex flex-col items-center" style={{ justifyContent: 'space-between', width: '100%', height: '100%' }}>
+                                <motion.div>
                                     <CircularProgressbar
-                                    
                                         strokeWidth={10}
                                         value={item.percentage}
                                         text={`${item.percentage}%`}
@@ -68,6 +62,7 @@ function SkillsProgress() {
                                             pathTransition: 'dashed',
                                             pathTransitionDuration: 0.5,
                                         })}
+                                        className="w-full h-full" // Ensure the circle fills its container
                                     />
                                 </motion.div>
                                 <div className="text-center mt-2 text-white">{item.label}</div>

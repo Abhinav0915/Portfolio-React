@@ -3,6 +3,7 @@ import Background from '../assets/background.webp';
 import { motion } from "framer-motion";
 import Type from '../components/Home/Type';
 import SocialApps from '../components/Home/SocialApps';
+import ContactModal from '../components/About/ContactModal';
 
 export default function Homepage () {
 
@@ -62,7 +63,7 @@ export default function Homepage () {
             <Type/>
           </motion.p>
         </motion.div>
-
+        <ContactModal/>
         <motion.div
           initial="hidden"
           animate="visible"

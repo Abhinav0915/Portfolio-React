@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 
-function ToolsHeading(){
-   
-      
+function AdaptiveStatsHeading(){
+        
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
@@ -18,10 +17,10 @@ function ToolsHeading(){
             animate="visible"
             variants={itemVariants}
             >
-        <h1 className="text-6xl text-center text-white mt-8" style={{fontFamily: '"Poppins", sans-serif'}}>Passionated <span style={{color: '#06d6a0'}}>Tools</span></h1>
+        <h1 className="text-6xl text-center text-white mt-8" style={{fontFamily: '"Poppins", sans-serif'}}>Adaptive <span style={{color: '#06d6a0'}}>Stats</span></h1>
         </motion.div>
           
     )
 }
 
-export default ToolsHeading;
+export default AdaptiveStatsHeading;

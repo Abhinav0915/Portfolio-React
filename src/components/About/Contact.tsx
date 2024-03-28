@@ -1,17 +1,12 @@
 import { useRef, useState } from 'react';
 import Background from '../../assets/background.webp'; 
 import emailjs from '@emailjs/browser';
+import ContactModal from './ContactModal';
 
 function Contact(){
     const [recipient, setRecipient] = useState('');
     const [subject, setSubject] = useState('');
     const [msgBody, setMsgBody] = useState('');
-  
-    
-    
-  
-    
-  
   
     const form = useRef<HTMLFormElement>(null);
   
@@ -37,13 +32,9 @@ function Contact(){
       }
     };
     return(
-        <div style={{ 
-            backgroundImage: `url(${Background})`, 
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center', 
-            minHeight: '100vh', 
-          }}>
         
+            
+           
           <div className='container flex'>
         {/* Left side: Text heading */}
         <div className="w-1/2 p-6" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', color: 'white'}}>
@@ -70,8 +61,7 @@ function Contact(){
           </div>
         </div>
         
-          
-          </div>
+        
     )
 }
 
