@@ -6,7 +6,7 @@ function EducationAndExperienceHeading(){
         visible: {
             opacity: 1,
             y: 0,
-            transition: { delay: 1.4, duration: 1 } 
+            transition: { delay: 1.8, duration: 1 } 
         }
     };
     return(

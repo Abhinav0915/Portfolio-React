@@ -24,11 +24,12 @@
   align-items: center;
   justify-content: center;
   
-  margin-top: 1em;
+  margin-top: 2em;
   /* Add more styling as needed */
 }
 
 .social-icon {
+  margin-left: 0.5em;
   font-size: 4em; /* Adjust the size of the icons */
   color: #06d6a0; /* Adjust the color of the icons */
   border-radius: 50%; /* Make the icons circular */
