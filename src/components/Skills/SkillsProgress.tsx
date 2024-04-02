@@ -7,7 +7,7 @@ function SkillsProgress() {
         hidden: { opacity: 0 },
         visible: { 
             opacity: 1,
-            transition: { delay: 1.2, duration: 1 } 
+            transition: { delay: 0.8, duration: 1 } 
         }
     };
       
@@ -16,7 +16,7 @@ function SkillsProgress() {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { delay: 1.2, duration: 1 } 
+            transition: { delay: 1, duration: 1 } 
         }
     };
 

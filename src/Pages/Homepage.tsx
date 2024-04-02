@@ -10,7 +10,7 @@ export default function Homepage () {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
-      transition: { delay: 1, duration: 2 } 
+      transition: { delay: 0.5, duration: 2 } 
     }
   };
   
@@ -32,6 +32,7 @@ export default function Homepage () {
       backgroundSize: 'cover', // Adjust the background size as needed
       backgroundPosition: 'center', // Adjust the background position as needed
       minHeight: '100vh', // Set a minimum height to cover the entire viewport
+      
     }}>
       <Navbar />
       

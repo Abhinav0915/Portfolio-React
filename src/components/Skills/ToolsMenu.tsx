@@ -11,7 +11,7 @@ const ToolsMenu = () => {
     visible: {
         opacity: 1,
         y: 0,
-        transition: { delay: 1.6, duration: 1 } 
+        transition: { delay: 1.5, duration: 1 } 
     }
 };
     // Array for the icons

@@ -7,6 +7,7 @@ import EducationAndExperienceHeading from '../components/About/EduAndExpHeading'
 import Experience from '../components/About/Experiences';
 import Education from '../components/About/Education';
 import { motion } from 'framer-motion';
+import ContactModal from '../components/About/ContactModal';
 
 
 export default function About(){
@@ -15,7 +16,7 @@ export default function About(){
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
-      transition: { delay: 1, duration: 2 } 
+      transition: { delay: 0.5, duration: 2 } 
     }
   };
   
@@ -24,7 +25,7 @@ export default function About(){
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1 } 
+      transition: { delay: 0.8, duration: 1 } 
     }
   };
 
@@ -33,7 +34,7 @@ export default function About(){
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 2, duration: 1 } 
+      transition: { delay: 1, duration: 1 } 
     }
   };
   
@@ -66,6 +67,7 @@ export default function About(){
                   <p className="mt-4 text-xl">I am also interested in building new <span className="text-green-500">Web Technologies and Products</span>, as well as exploring areas related to <span className="text-green-500">Artificial Intelligence.</span></p>
                   
                   <ResumeDownload/> 
+                  <ContactModal/>
               </div>
               
               {/* <div className="mt-4 md:mt-0">

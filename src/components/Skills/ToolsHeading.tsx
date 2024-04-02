@@ -8,7 +8,7 @@ function ToolsHeading(){
         visible: {
             opacity: 1,
             y: 0,
-            transition: { delay: 1.4, duration: 1 } 
+            transition: { delay: 1.2, duration: 1 } 
         }
     };
 
