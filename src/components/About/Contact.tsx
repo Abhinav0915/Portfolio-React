@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
-import Background from '../../assets/background.webp'; 
+
 import emailjs from '@emailjs/browser';
-import ContactModal from './ContactModal';
+
 
 function Contact(){
     const [recipient, setRecipient] = useState('');
