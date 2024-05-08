@@ -1,4 +1,3 @@
-import Background from '../assets/background.webp'; 
 // import ContactModal from '../components/About/ContactModal';
 import PersonalInfo from '../components/About/AdaptiveStats';
 import NavBar from '../components/Utils/NavBar';

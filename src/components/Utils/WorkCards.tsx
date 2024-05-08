@@ -1,5 +1,3 @@
-import React from 'react';
-
 function WorkCards() {
   // Dummy data for illustration
   const cardsData = [

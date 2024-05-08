@@ -9,7 +9,7 @@ export default function Homepage () {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
-      transition: { delay: 0.5, duration: 2 } 
+      transition: { delay: 0.5, duration: 1 } 
     }
   };
   
@@ -18,7 +18,7 @@ export default function Homepage () {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1, duration: 1 } 
+      transition: { delay: 0.5, duration: 1 } 
     }
   };
   
@@ -61,11 +61,11 @@ export default function Homepage () {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          transition={{ delay: 2 }} // Delay appearance of SocialApps by 2 seconds
+          // Delay appearance of SocialApps by 2 seconds
         >
           <div className='text-center text-white' style={{marginTop: '6em'}} >
             <p className='text-3xl'>FIND ME ON</p>
-            <p className='mt-4' style={{fontSize: '12px'}}>Please don't hesitate to reach out to me and <span style={{color: '#06d6a0'}}>connect</span>.</p>
+            <p className='mt-4 mb-2' style={{fontSize: '12px'}}>Please don't hesitate to reach out to me and <span style={{color: '#06d6a0'}}>connect</span>.</p>
             <SocialApps/>
           </div>
         </motion.div>

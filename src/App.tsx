@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Homepage from './Pages/Homepage'
 import Works from './Pages/Works'
-import Experience from './Pages/Experience'
 import About from './Pages/About'
 import Skills from './Pages/Skills'
 
@@ -14,10 +13,7 @@ function App() {
       <Route path='/' element={<Homepage/>}></Route>
       <Route path='/skills' element={<Skills/>}></Route>   
       <Route path='/works' element={<Works/>}></Route>   
-      <Route path='/experience' element={<Experience/>}></Route>   
       <Route path='/about' element={<About/>}></Route>   
- 
-
     </Routes>
    </BrowserRouter>
   )

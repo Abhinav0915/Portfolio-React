@@ -1,4 +1,4 @@
-import Background from '../assets/background.webp'; 
+
 
 import WorkHeading from '../components/Works/WorkHeading';
 import Navbar from '../components/Utils/NavBar';

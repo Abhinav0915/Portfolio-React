@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import icon from "../../assets/icon2.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4" style={{ paddingLeft: '4em', paddingRight: '4em' }}>
         <a className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" />
+          <img src= {icon} className="h-8" style={{height: '50px', width: '50px'}} />
         </a>
         <button onClick={toggleMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded={isOpen ? "true" : "false"}>
           <span className="sr-only">Open Menu</span>
