@@ -43,12 +43,7 @@ export default function About(){
 
     return(
         <>
-      <div className="text-white" style={{ 
-        backgroundImage: `url(${Background})`,
-        backgroundSize: 'cover', // Adjust the background size as needed
-        backgroundPosition: 'center', // Adjust the background position as needed
-        minHeight: '50vh', 
-         }}>
+      <div className="text-white" >
       <NavBar />
       <motion.div
           initial="hidden"
@@ -84,18 +79,13 @@ export default function About(){
           </div>
           
       </div>
-              </motion.div>
+      </motion.div>
       <div className="flex justify-center">
-        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" style={{width: '50%'}} />
+        <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" style={{width: '50%'}} />
         </div>
 
       <div className="text-white" 
-      style={{ 
-        backgroundImage: `url(${Background})` ,
-        backgroundSize: 'cover', // Adjust the background size as needed
-        backgroundPosition: 'center', // Adjust the background position as needed
-        minHeight: '20vh', // Set a minimum height to cover the entire viewport
-        }}>
+      >
          <motion.div
           initial="hidden"
           animate="visible"
@@ -105,18 +95,13 @@ export default function About(){
 
         </motion.div>
       <div className="flex justify-center">
-        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" style={{width: '50%'}} />
+        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 " style={{width: '50%'}} />
     </div>
       
       </div>
       
       <div className="text-white" 
-      style={{ 
-        backgroundImage: `url(${Background})` ,
-        backgroundSize: 'cover', // Adjust the background size as needed
-        backgroundPosition: 'center', // Adjust the background position as needed
-        minHeight: '100vh', // Set a minimum height to cover the entire viewport
-        }}>
+      >
             
         <EducationAndExperienceHeading/>
         <motion.div

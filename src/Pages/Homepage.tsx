@@ -1,5 +1,4 @@
 import Navbar from '../components/Utils/NavBar'; 
-import Background from '../assets/background.webp'; 
 import { motion } from "framer-motion";
 import Type from '../components/Home/Type';
 import SocialApps from '../components/Home/SocialApps';
@@ -27,13 +26,7 @@ export default function Homepage () {
 
   return (
     <> 
-    <div style={{ 
-      backgroundImage: `url(${Background})`, // Apply the background image
-      backgroundSize: 'cover', // Adjust the background size as needed
-      backgroundPosition: 'center', // Adjust the background position as needed
-      minHeight: '100vh', // Set a minimum height to cover the entire viewport
-      
-    }}>
+    
       <Navbar />
       
       <motion.div
@@ -76,7 +69,7 @@ export default function Homepage () {
             <SocialApps/>
           </div>
         </motion.div>
-      </div>
+      
     </>
    
   );

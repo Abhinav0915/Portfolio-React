@@ -9,7 +9,7 @@ function Experience() {
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Java Developer Intern</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">NEC Corporation India Pvt Ltd</time>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oct 2023 - Present (Onsite)</time>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oct 2023 - April 2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">I have been working as both a Backend and Frontend Developer. On the backend, I specialize in Java and Spring Boot, while on the frontend, I excel in crafting interactive user interfaces using React and Tailwind CSS.</p>
                 
             </li>
@@ -30,7 +30,7 @@ function Experience() {
                         <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
                     </svg>
                 </span>
-                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Technical Head</h3>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white mt-7">Technical Head</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> Cyphers Club At Bennett University</time>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> Mar 2021 - Apr 2022</time>
 

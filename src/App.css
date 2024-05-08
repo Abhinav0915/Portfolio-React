@@ -1,4 +1,7 @@
 /* Scrollbar Track */
+body{
+  background-image: url(src/assets/background.webp);
+}
 ::-webkit-scrollbar {
   width: 8px; /* width of the scrollbar */
   background-color: transparent; /* background color of the scrollbar track */
@@ -24,3 +27,21 @@
 ::-webkit-scrollbar-corner {
   background-color: transparent; /* background color of the corner where the vertical and horizontal scrollbars meet */
 }
+
+
+
+/* @media (max-width: 768px) {
+
+  
+  .flex {
+    flex-direction: column; 
+
+  }
+
+  
+
+  .box {
+    flex: 1 1 100%; 
+    margin-top: 2em;
+  }
+} */ 
