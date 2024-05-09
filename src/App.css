@@ -1,6 +1,6 @@
 /* Scrollbar Track */
 body{
-  background-image: url(src/assets/background.webp);
+  background-image: url(/background.webp);
 }
 ::-webkit-scrollbar {
   width: 8px; /* width of the scrollbar */
