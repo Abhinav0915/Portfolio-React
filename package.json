@@ -14,6 +14,7 @@
     "@tsparticles/react": "^3.0.0",
     "axios": "^1.6.8",
     "firebase": "^10.11.1",
+    "firebase-tools": "^13.33.0",
     "framer-motion": "^11.0.21",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",

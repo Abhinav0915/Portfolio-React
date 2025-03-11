@@ -21,12 +21,9 @@ export default function Homepage () {
       transition: { delay: 0.5, duration: 1 } 
     }
   };
-  
-
 
   return (
     <> 
-    
       <Navbar />
       
       <motion.div
@@ -61,16 +58,23 @@ export default function Homepage () {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          // Delay appearance of SocialApps by 2 seconds
+          style={{ 
+            position: 'fixed', 
+            bottom: 0, 
+            left: 0, 
+            right: 0, 
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            paddingBottom: '2em' // Optional: Add some padding at the bottom
+          }}
         >
-          <div className='text-center text-white' style={{marginTop: '6em'}} >
+          <div className='text-center text-white'>
             <p className='text-3xl'>FIND ME ON</p>
             <p className='mt-4 mb-2' style={{fontSize: '12px'}}>Please don't hesitate to reach out to me and <span style={{color: '#06d6a0'}}>connect</span>.</p>
             <SocialApps/>
           </div>
         </motion.div>
-      
     </>
-   
   );
 }

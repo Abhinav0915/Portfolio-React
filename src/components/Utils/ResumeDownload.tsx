@@ -1,4 +1,4 @@
-import AbhinavResume from '../../assets/Resume_AbhinavSaxena.pdf';
+import AbhinavResume from '../../assets/AbhinavSaxena-Resume.pdf';
 
 
 export default function ResumeDownload(){
