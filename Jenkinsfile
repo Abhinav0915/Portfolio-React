@@ -21,7 +21,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '/opt/homebrew/opt/node@22/bin/npm install'
+                sh 'npm install'
             }
         }
 
