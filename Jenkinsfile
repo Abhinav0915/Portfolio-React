@@ -1,8 +1,12 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'Node16' // Replace 'Node16' with the name you configured in Global Tool Configuration
+    }
+
     environment {
-        FIREBASE_TOKEN = credentials('FIREBASE_DEPLOY_TOKEN') // Firebase token stored in Jenkins credentials
+        FIREBASE_TOKEN = credentials('FIREBASE_DEPLOY_TOKEN')
     }
 
     stages {
@@ -38,4 +42,3 @@ pipeline {
         }
     }
 }
-
