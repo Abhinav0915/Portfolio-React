@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node16' // Replace 'Node16' with the name you configured in Global Tool Configuration
+        nodejs 'Node20' // Replace 'Node16' with the name you configured in Global Tool Configuration
     }
 
     environment {
