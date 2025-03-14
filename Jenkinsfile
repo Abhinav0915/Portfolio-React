@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node20' // Replace 'Node16' with the name you configured in Global Tool Configuration
+        nodejs 'Node20' // Ensure this matches the name in Jenkins Global Tool Configuration
     }
 
     environment {
@@ -25,7 +25,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                sh 'npm install' // Installs project dependencies from package.json
+            }
+        }
+
+        stage('Install Firebase CLI') {
+            steps {
+                sh 'npm install -g firebase-tools' // Install Firebase CLI globally
             }
         }
 
